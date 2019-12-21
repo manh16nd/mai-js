@@ -1,9 +1,10 @@
-const Element = ({type, children, attr, value}) => {
+const Element = ({type, children, attr, value,}) => {
 
     return {
         type,
         children,
         attr,
+        value,
     }
 }
 

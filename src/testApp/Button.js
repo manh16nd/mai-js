@@ -8,15 +8,17 @@ const Button = state => {
     setInterval(() => increase(), 1000)
 
     const increase = () => {
-        setState(Button, {value: state.value + 1})
+        setState(Button, render, {value: state.value + 1})
     }
 
-    return createElement({
+    const render = () => createElement({
         type: 'button',
         attr: [],
         children: [],
         value: state,
     })
+
+    return render()
 }
 
 export default Button
